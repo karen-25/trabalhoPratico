@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cadastro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="config.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="header1">
+  <h1>Best Player</h1>
+</div>
+
+<div class="sidenav">
+    <h1>Gêneros</h1>
+    <a href="pop.html">POP</a>
+    <a href="rock.html">Rock</a>
+    <a href="indie.html">Indie</a>
+    <a href="classica.html">Clássica</a>
+    <a href="mpb.html">MPB</a>
+    <a href="rap.html">Rap</a>
+    
+
+  </div>
+
+
+<div class="navbar">
+  <a href="principal.html" class="active">Home</a>
+  <a href="cadastrar.html">Cadastro</a>
+  <a href="contato.html">Contato</a>
+  <a href="galeria.html">Galeria</a>
+  <a href="preco.html">Preço</a>
+</div>
+
+
+
+
+<form id="regForm" action="/action_page.php">
+    <h1>Cadastro:</h1>
+    <!-- One "tab" for each step in the form: -->
+    <div class="tab">Nome:
+      <p><input placeholder="Nome..." oninput="this.className = ''" name="fname"></p>
+      <p><input placeholder="Sobrenome..." oninput="this.className = ''" name="lname"></p>
+    </div>
+    <div class="tab">Contato:
+      <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+      <p><input placeholder="Telefone..." oninput="this.className = ''" name="phone"></p>
+    </div>
+    <div class="tab">Data de Nascimento:
+      <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+      <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+      <p><input placeholder="aaaa" oninput="this.className = ''" name="yyyy"></p>
+    </div>
+    <div class="tab">Login:
+      <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+      <p><input placeholder="Senha..." oninput="this.className = ''" name="pword" type="password"></p>
+    </div>
+    <div style="overflow:auto;">
+      <div style="float:right;">
+        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      </div>
+    </div>
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+      <span class="step"></span>
+    </div>
+  </form>
+  <script type="text/javascript" src="spt/script2.js"></script>
+
+
+<div class="footer">
+    <div class="col-sm-4">
+        <h3>Conecte</h3>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+</div>
+
+</body>
+</html>
